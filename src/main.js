@@ -3,6 +3,7 @@ const game = new Game();
 function setup() {
   let canvas = createCanvas(WIDTH, HEIGHT);
   canvas.parent("game-board");
+  // TA: Can you tell me why we have this here? 
 
   game.setup();
 }
