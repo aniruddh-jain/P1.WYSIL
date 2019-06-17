@@ -28,14 +28,22 @@ By playing this game, you provide consent to collection and use of this data.
 Product Research Documentation
 1. Canvas: 
 2. Shortlist Deck:
-3. Data Input:
+3. Player Data Input:
 4. Tutorial:
 5. Data Output:
+6. Cards Deck:
+7. Timer: ?
+8. Inversion: 
 
-Steps:
-1. Provide introduction and Collect the persons Name, Email, Gender, Age and current relationship status. 
-2. Initiate Start of Game which brings 5 Cards from the deck to the shortlist. 
-3. 
+Steps: <br> 
+1. Provide introduction and Collect the persons Name, Email, Gender, Age and current relationship status. <br> 
+2. Initiate Start of Game which: <br> 
+2.1 Creates and Extracts 5 Cards from the deck to the selection pane. <br> 
+2.2 Creates empty 3 spots in the shortlist pane. <br> 
+2.3 Creates empty 7 spots in the finalist pane. <br> 
+3. Initiate Tutorial which brings up text in order and removes on click about different areas on the card board. <br> 
+4. Player can then invert the card in the selection pane which brings another property of the card to display. If clicked again it reverts to first propoerties.<br> 
+5. 
 
 
 
