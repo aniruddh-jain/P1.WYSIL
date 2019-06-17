@@ -25,7 +25,7 @@ By playing this game, you provide consent to collection and use of this data.
 <br>
 
 
-Product Research Documentation
+<b> C. Product Units </b>
 1. Canvas: 
 2. Shortlist Deck:
 3. Player Data Input:
@@ -37,7 +37,7 @@ Product Research Documentation
 9. Analysis Page: 
 10. The selection dial: 
 
-Steps: <br> 
+<b> D. Game Steps </b>
 1. Provide introduction and Collect the persons Name, Email, Gender, Age and current relationship status. <br> 
 2. Initiate Start of Game which: <br> 
 2.1 Creates and Extracts 5 Cards from the deck to the selection pane. <br> 
@@ -49,4 +49,4 @@ Steps: <br>
 6. If the finalist pane has all 7 cards at any time the game ends. Or if the cards in deck end and there is no cards in shortlist the game ends. <br> 
 7. We finally get a summation of hidden card propoerties with reference to every player and individually as the results.<br> 
 
-
+<b> E. Resources </b>
