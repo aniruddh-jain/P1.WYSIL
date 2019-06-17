@@ -1,6 +1,7 @@
 # P1.WYSIL
 
-A. Introduction
+<b> A. Introduction </b>
+<break>
 This game is an aggregation of tyou
 
 
