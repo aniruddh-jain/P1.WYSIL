@@ -31,9 +31,11 @@ Product Research Documentation
 3. Player Data Input:
 4. Tutorial:
 5. Data Output:
-6. Cards Deck:
+6. Cards Deck: Cards have two sides, one positive and one negative. Player can invert between them. There are certain points associated to cards and those sides. 
 7. Timer: ?
 8. Inversion: 
+9. Analysis Page: 
+10. The selection dial: 
 
 Steps: <br> 
 1. Provide introduction and Collect the persons Name, Email, Gender, Age and current relationship status. <br> 
@@ -42,8 +44,9 @@ Steps: <br>
 2.2 Creates empty 3 spots in the shortlist pane. <br> 
 2.3 Creates empty 7 spots in the finalist pane. <br> 
 3. Initiate Tutorial which brings up text in order and removes on click about different areas on the card board. <br> 
-4. Player can then invert the card in the selection pane which brings another property of the card to display. If clicked again it reverts to first propoerties.<br> 
-5. 
-
+4. Player can then invert the card in the selection pane which brings another property of the card to display. If clicked again it reverts to first properties.<br> 
+5. Every click on a card gives 4 options: Reject, Shortlist, Finalise, and Invert. But only until the card is rejected, or finalised. Once these two are clicked card option vanishes. <br> 
+6. If the finalist pane has all 7 cards at any time the game ends. Or if the cards in deck end and there is no cards in shortlist the game ends. <br> 
+7. We finally get a summation of hidden card propoerties with reference to every player and individually as the results.<br> 
 
 
