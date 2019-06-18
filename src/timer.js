@@ -1,8 +1,9 @@
-let timer = 5
+let timer = 15
 
-function setup() { 
-  createCanvas(400, 400);
-} 
+//function setup() { 
+//  createCanvas(400, 400);
+//} 
+// Dont need it here. 
 
 function draw() { 
   background(220);
