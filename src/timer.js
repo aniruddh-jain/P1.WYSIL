@@ -1,29 +1,24 @@
-let timer = 15
-
-//function setup() { 
-//  createCanvas(400, 400);
-//} 
-// Dont need it here. 
-
-function draw() { 
-  background(220);
-  textAlign(CENTER, CENTER);
-  textSize(100);
-  text(timer, width/2, height/2);
-  
-  // while (timer > 0) {  // this doesn't work because it's all happening at the same time
-  //   timer --;
-  // }
-  
-  // frameCount --> this keeps track of the number of times the program has gone throught the code, 60 = 1 second
-  // % ---> this is the Modulo operator, it divides numbers and evaluates to the remainder: 17 % 5 evaluates to 2 remainder
-  // this can be used to determine if the number on the left is divisible by the number on the right
-  
-  if (frameCount % 60 == 0 && timer > 0) { // if the frameCount is divisible by 60, then a second has passed. it will stop at 0
-    timer --;
+class Timer {
+  constructor() {
+    this.seconds = 600;
   }
-  if (timer == 0) {
-    text("GAME OVER", width/2, height*0.7);
+
+  draw() {
+    textAlign(CENTER, CENTER);
+    textSize(100);
+    text(this.seconds, WIDTH / 1.1, HEIGHT / 15);
+
+    // while (timer > 0) {  // this doesn't work because it's all happening at the same time
+    //   timer --;
+    // }
+
+    // frameCount --> this keeps track of the number of times the program has gone throught the code, 60 = 1 second
+    // % ---> this is the Modulo operator, it divides numbers and evaluates to the remainder: 17 % 5 evaluates to 2 remainder
+    // this can be used to determine if the number on the left is divisible by the number on the right
+
+    if (frameCount % 60 == 0 && this.seconds > 0) {
+      // if the frameCount is divisible by 60, then a second has passed. it will stop at 0
+      this.seconds--;
+    }
   }
-  
 }
