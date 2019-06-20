@@ -113,4 +113,12 @@ class Game {
     //   });
     // });
   }
+
+  mousePressed() {
+    console.log("mouse pressed: ", mouseX / 200, mouseY / 200);
+  }
+
+  mouseReleased() {
+    console.log("mouse released: ", mouseX, mouseY);
+  }
 }

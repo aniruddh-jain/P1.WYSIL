@@ -3,7 +3,7 @@ const timer = new Timer();
 
 let bgimg;
 
-function preLoad() {
+function preload() {
   bgimg = loadImage("assets/fish.jpg");
 }
 
@@ -17,9 +17,9 @@ function setup() {
 
 function draw() {
   clear();
+  image(bgimg, 0, 0, WIDTH, HEIGHT);
   game.draw();
   timer.draw();
-  image(bgimg, 0, 0, 50, 50);
 }
 
 function gameOver() {
@@ -27,6 +27,14 @@ function gameOver() {
     text("GAME OVER", width / 2, height * 0.7);
     // Add the condition for 7 cards in deck later.
   }
+}
+
+function mousePressed() {
+  game.mousePressed();
+}
+
+function mouseReleased() {
+  game.mouseReleased();
 }
 
 // function keyPressed() {
