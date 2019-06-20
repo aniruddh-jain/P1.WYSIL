@@ -59,6 +59,10 @@ class Game {
       type: "finalist",
       carddeck: new Cards("     FINAL")
     };
+    this.xoffset = 0.0;
+    this.yoffset = 0.0;
+    this.bx;
+    this.by;
   }
 
   setup() {}
@@ -114,9 +118,51 @@ class Game {
     // });
   }
 
+  d;
+
   mousePressed() {
     console.log("mouse pressed: ", mouseX / 200, mouseY / 200);
+    this.bx = int(round(mouseX));
+    xOffset = mouseX - this.bx;
+    yOffset = mouseY - this.by;
+    this.by = int(round(mouseY));
   }
+
+  mouseDragged() {
+    this.bx = mouseX - xOffset;
+    this.by = mouseY - yOffset;
+  }
+
+  //   var dragging = false; // Is the object being dragged?
+  //   var rollover = false; // Is the mouse over the ellipse?
+
+  //   var x, y, w, h; // Location and size
+  //   x = 100; // Im not sure if we need this.
+  //   y = 100;
+  //   w = 200;
+  //   h = 200;
+
+  //   dragging = true;
+
+  //   // Adjust location if being dragged
+  //   if (dragging) {
+  //     x = mouseX + offsetX;
+  //     y = mouseY + offsetY;
+  //   }
+
+  //   stroke(0);
+  //   // Different fill based on state
+  //   if (dragging) {
+  //     fill(50);
+  //   } else if (rollover) {
+  //     fill(100);
+  //   } else {
+  //     fill(175, 200);
+  //   }
+  //   // rect(x (Change to our x coordinate), Change to our y coordinate, w, h);
+  // }
+
+  // // Find your grid here and then move that particular card from there to where needed.
 
   mouseReleased() {
     console.log("mouse released: ", mouseX, mouseY);
