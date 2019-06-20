@@ -1,12 +1,12 @@
 class Timer {
   constructor() {
-    this.seconds = 600;
+    this.seconds = 180;
   }
 
   draw() {
-    textAlign(CENTER, CENTER);
-    textSize(100);
-    text(this.seconds, WIDTH / 1.1, HEIGHT / 15);
+    // textAlign(CENTER, CENTER);
+    textSize(50);
+    text(this.seconds, WIDTH / 1.2, HEIGHT / 12);
 
     // while (timer > 0) {  // this doesn't work because it's all happening at the same time
     //   timer --;

@@ -1,6 +1,6 @@
 const game = new Game();
 const timer = new Timer();
-
+let canvas;
 let bgimg;
 
 function preload() {
@@ -8,11 +8,10 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(WIDTH, HEIGHT);
+  canvas = createCanvas(WIDTH, HEIGHT);
   canvas.parent("game-board");
   //background("#7F949E");
   game.setup();
-  //image = (bgimg, 0, 0, WIDTH, HEIGHT);
 }
 
 function draw() {
@@ -20,11 +19,16 @@ function draw() {
   image(bgimg, 0, 0, WIDTH, HEIGHT);
   game.draw();
   timer.draw();
+
+  gameOver();
 }
 
 function gameOver() {
-  if (timer.seconds == 0) {
-    text("GAME OVER", width / 2, height * 0.7);
+  if (timer.seconds === 0 || game.finalistArr.length === 7) {
+    text("GAME OVER", WIDTH / 2, HEIGHT / 2);
+    game.drawCharts();
+    canvas.hide();
+    noLoop();
     // Add the condition for 7 cards in deck later.
   }
 }
@@ -32,12 +36,3 @@ function gameOver() {
 function mousePressed() {
   game.mousePressed();
 }
-
-function mouseReleased() {
-  game.mouseReleased();
-}
-
-// function keyPressed() {
-//   if (keyCode === 32) {
-//   }
-// }
