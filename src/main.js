@@ -4,13 +4,12 @@ const timer = new Timer();
 let bgimg;
 
 function preLoad() {
-  bgimg = loadimage("assets/fish.jpg");
+  bgimg = loadImage("assets/fish.jpg");
 }
 
 function setup() {
   let canvas = createCanvas(WIDTH, HEIGHT);
   canvas.parent("game-board");
-
   //background("#7F949E");
   game.setup();
   //image = (bgimg, 0, 0, WIDTH, HEIGHT);
@@ -18,10 +17,9 @@ function setup() {
 
 function draw() {
   clear();
-  //background = (img src='http://www.52dazhew.com/data/out/160/586824408-minimal-desktop-wallpapers.jpg');
-  image = (bgimg, 0, 0, WIDTH, HEIGHT);
   game.draw();
   timer.draw();
+  image(bgimg, 0, 0, 50, 50);
 }
 
 function gameOver() {
