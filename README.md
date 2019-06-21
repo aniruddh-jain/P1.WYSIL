@@ -1,4 +1,4 @@
-# P1.WYSIL | What You Seek In Love - The Game 
+# P1.WYSIL | Tough Decisions - The Game 
 
 <b> A. Introduction </b>
 <br>
